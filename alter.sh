@@ -1,2 +1,5 @@
 #!/bin/bash
-echo $[$1/$2]
+a=$1
+b=$2
+bc <<< "scale = 2; $a/$b"
+
